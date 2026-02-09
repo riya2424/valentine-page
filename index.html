@@ -105,6 +105,23 @@
       background: var(--yes);
       color: #fff;
     }
+    /* ❤️ Heartbeat animation for YES button */
+#yesBtn {
+  animation: heartbeat 1.5s infinite;
+}
+
+/* Heartbeat keyframes */
+@keyframes heartbeat {
+  0% {
+    transform: translateY(-50%) scale(1);
+  }
+  50% {
+    transform: translateY(-50%) scale(1.08);
+  }
+  100% {
+    transform: translateY(-50%) scale(1);
+  }
+}
     #yesBtn:hover { background: var(--yesHover); }
 
     #noBtn {
